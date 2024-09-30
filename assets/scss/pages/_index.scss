@@ -1,0 +1,134 @@
+.banner-bg{
+  background-image: url("/assets/images/Banner-sm.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 480px;
+}
+@include sm{
+  .banner-bg{
+    background-image: url("/assets/images/Banner.png");
+    height: 800px;
+  }
+}
+.slogan-position{
+  padding-top: 280px;
+}
+@include sm{
+  .slogan-position{
+    padding-top: 393px;
+  }
+}
+.slogan{
+  font-size: 40px;
+  font-weight: 700;
+  -webkit-text-stroke: 8px $white;
+}
+.slogan::after{
+  content:attr(data-stroke);
+  color: $green;
+  position: absolute;
+  left: 0;
+  font-style: 40px;
+  font-weight: 700;
+  -webkit-text-stroke: 0;
+}
+@include sm{
+  .slogan{
+    font-size: 96px;
+    font-weight: 900;
+  }
+  .slogan::after{
+    font-style: 96px;
+    font-weight: 900;
+  }
+  .me-128{
+    margin-right: 128px;
+  }
+  .ms-96{
+    margin-left: 96px;
+  }
+}
+
+//intro
+.plus{
+  width: 165px;
+}
+@include lg{
+  .plus{
+    width: 250px;
+  }
+}
+.circle-box{
+  background-color: #FFF;
+  height: 416px;
+  width: 416px;
+}
+.circle-out{
+  width: 184px;
+  height: 184px;
+  border: 2px solid $gray-80;
+  border-radius: 800px;
+  position: relative;
+}
+.circle-ins{
+  width: 160px;
+  height: 160px;
+  border: 2px dashed $orange-dark;
+  border-radius: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.circle-position-1{
+  left: 20px;
+  top: 0;
+}
+.circle-position-2{
+  left: 167px;
+  top: 103px;
+}
+.circle-position-3{
+  left: 0;
+  top: 167px;
+}
+@include lg{
+  .circle-out{
+    width: 232px;
+    height: 232px;
+  }
+  .circle-ins{
+    width: 200px;
+    height: 200px;
+  }
+  .circle-position-1{
+    left: 28px;
+    top: 0;
+  }
+  .circle-position-2{
+    left: 184px;
+    top: 120px;
+  }
+  .circle-position-3{
+    left: 0;
+    top: 184px;
+  }
+}
+
+//mbtitest
+.mbtitest-bg{
+  background-image: url("/assets/images/mbti\ people.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+}
+
+.pb-440{
+  padding-bottom: 208px;
+}
+@media (min-width:992px){
+  .pb-440{
+    padding-bottom: 440px;
+  }
+}

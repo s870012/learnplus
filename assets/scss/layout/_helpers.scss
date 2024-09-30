@@ -1,0 +1,13 @@
+.fs-20-24{
+    font-size: 20px;
+}
+@include sm{
+    .fs-20-24{
+        font-size: 24px;
+    }
+}
+
+//color
+.text-primary-dark{
+    color: $orange-dark;
+}
